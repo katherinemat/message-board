@@ -1,63 +1,42 @@
 @import "ember-bootstrap/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata');
 $logo: #083a8c;
 
 body {
-
+  font-family: 'Cutive Mono', serif;
 }
 
-a {
-  color: $logo;
+header {
+  padding-right: 20%;
   text-align: center;
-  font-family: 'Special Elite', serif;
-}
+  #header {
+    font-size: 60px;
+  }
 
-a:hover {
-  text-shadow: 1px 1px 1px black;
-  text-decoration: none;
-  color: $logo;
-}
+  #sub-header {
+    font-size: 24px;
+  }
 
-@keyframes first-pulse {
-  0% {
+  a {
     color: $logo;
   }
-  50% {
-    color: white;
-  }
-}
-#first-period {
-  animation: first-pulse 1s;
-  animation-iteration-count: 24;
-  animation-timing-function: step-start;
-}
 
-@keyframes second-pulse {
-  0% {
+  a:hover, a:visited, a:active {
+    text-decoration: none;
     color: $logo;
   }
-  50% {
-    color: white;
-  }
-}
-#second-period {
-  animation: second-pulse 1s;
-  animation-iteration-count: 24;
-  animation-timing-function: step-start;
-  animation-delay: 100ms;
-}
 
-@keyframes third-pulse {
-  0% {
-    color: $logo;
+  @keyframes first-pulse {
+    0% {
+      color: $logo;
+    }
+    50% {
+      color: white;
+    }
   }
-  50% {
-    color: white;
+  #first-period {
+    animation: first-pulse 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
   }
-}
-#third-period {
-  animation: third-pulse 1s;
-  animation-iteration-count: 24;
-  animation-timing-function: step-start;
-  animation-delay: 200ms;
 }

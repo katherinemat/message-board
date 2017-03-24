@@ -18,6 +18,10 @@ export default Ember.Component.extend({
       };
       this.set('editQuestionForm', false);
       this.sendAction('editQuestion', question, params);
-    }
+    },
+    deleteQuestion(question) {
+      this.sendAction('deleteQuestion', question);
+      this.transitionTo('index');
+    },
   }
 });

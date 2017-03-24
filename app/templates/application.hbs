@@ -1,13 +1,11 @@
 <header>
-     {{#link-to 'index'}}
-       <h1>Message Board
-         <span id="first-period">.</span>
-         <span id="second-period">.</span>
-         <span id="third-period">.</span>
-       </h1>
-     {{/link-to}}
+   {{#link-to 'index'}}
+     <h1 id="header">question forum</h1>
+     <h4 id="sub-header">I have a question about <span id="first-period">|</span></h4>
+   {{/link-to}}
 </header>
 <body>
+  <hr>
   <div class="container">
     {{outlet}}
   </div>
