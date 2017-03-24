@@ -5,7 +5,7 @@
 {{edit-question-tile model=model editQuestion='editQuestion'}}
 
 {{#each model.answers as |answer|}}
-  {{question-answer-tile model=model}}
+  {{question-answer-tile answer=answer}}
 {{/each}}
 
 {{new-answer-tile saveAnswer='saveAnswer' model=model}}
