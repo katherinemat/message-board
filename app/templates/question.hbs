@@ -3,3 +3,9 @@
 <p>{{model.text}}</p>
 <button {{action 'deleteQuestion' model}}>Delete</button>
 {{edit-question-tile model=model editQuestion='editQuestion'}}
+
+{{#each model.answers as |answer|}}
+  {{question-answer-tile model=model}}
+{{/each}}
+
+{{new-answer-tile saveAnswer='saveAnswer' model=model}}
