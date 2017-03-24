@@ -43,6 +43,7 @@ You will need the following things properly installed on your computer.
 ## Specifications
 
 1. build out index page with a form to add new questions
+- create link to home page that stays on application handlebars page
 - make the form show only if user clicks on a button that says: add new question
 - home page shows all questions with their authors
 - home page questions should be clickable and lead to a route specific to each question
