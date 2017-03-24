@@ -48,6 +48,7 @@ You will need the following things properly installed on your computer.
 - home page shows all questions with their authors
 - home page questions should be clickable and lead to a route specific to each question
 - on question's page, the full text, author, and title show
+- delete one question at a time
 - offer a button to reveal a form to edit the question's text, author name, and title
 - form to submit answer
 - each answer shows beneath its question

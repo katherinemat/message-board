@@ -1,0 +1,25 @@
+{{#if editQuestionForm}}
+<h3 {{action 'questionEditFormShow'}}>Need to edit your question?</h3>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label><br>
+      {{input value=model.title class="title form-control"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label><br>
+      {{input value=model.author class="author form-control"}}
+    </div>
+
+    <div class="form-group">
+      <label for="text">Text</label><br>
+      {{textarea rows="15" value=model.text class="text form-control"}}
+    </div>
+
+    <button {{action 'editQuestion' model}}>Save</button>
+  </form>
+</div>
+{{else}}
+  <h3 {{action 'questionEditFormShow'}}>Edit this question</h3>
+{{/if}}
