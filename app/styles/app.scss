@@ -1,0 +1,63 @@
+@import "ember-bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+$logo: #083a8c;
+
+body {
+
+}
+
+a {
+  color: $logo;
+  text-align: center;
+  font-family: 'Special Elite', serif;
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  color: $logo;
+}
+
+@keyframes first-pulse {
+  0% {
+    color: $logo;
+  }
+  50% {
+    color: white;
+  }
+}
+#first-period {
+  animation: first-pulse 1s;
+  animation-iteration-count: 24;
+  animation-timing-function: step-start;
+}
+
+@keyframes second-pulse {
+  0% {
+    color: $logo;
+  }
+  50% {
+    color: white;
+  }
+}
+#second-period {
+  animation: second-pulse 1s;
+  animation-iteration-count: 24;
+  animation-timing-function: step-start;
+  animation-delay: 100ms;
+}
+
+@keyframes third-pulse {
+  0% {
+    color: $logo;
+  }
+  50% {
+    color: white;
+  }
+}
+#third-period {
+  animation: third-pulse 1s;
+  animation-iteration-count: 24;
+  animation-timing-function: step-start;
+  animation-delay: 200ms;
+}
