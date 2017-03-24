@@ -1,6 +1,8 @@
 {{#if editQuestionForm}}
-<h3 {{action 'questionEditFormShow'}}>Need to edit your question?</h3>
-<div>
+<div class="row">
+  <h3 class="header" {{action 'questionEditFormShow'}}>Edit question</h3>
+</div>
+<div class="row">
   <form>
     <div class="form-group">
       <label for="title">Title</label><br>
@@ -23,5 +25,5 @@
   </form>
 </div>
 {{else}}
-  <h3 {{action 'questionEditFormShow'}}>Edit this question</h3>
+  <h3 class="header" {{action 'questionEditFormShow'}}>Edit question</h3>
 {{/if}}

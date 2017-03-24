@@ -40,3 +40,45 @@ header {
     animation-timing-function: step-start;
   }
 }
+
+
+//index content
+.new-question {
+  .header:hover {
+    cursor: pointer;
+  }
+
+}
+
+.index-questions {
+  .question-link {
+    cursor: pointer;
+  }
+  .question-link:hover, .question-link:visited, .question-link:active {
+    text-decoration: none;
+    color: $logo;
+  }
+}
+
+
+//question page
+.question-text {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.edit-question {
+  padding-top: 24px;
+
+  .header {
+    float: right;
+  }
+  .header:hover {
+    cursor: pointer;
+  }
+}
+
+.new-answer {
+  padding-top: 24px;
+  padding-bottom: 36px;
+}

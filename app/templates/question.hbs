@@ -1,10 +1,23 @@
-<h2>{{model.title}}</h2>
-<h4>-{{model.author}}</h4>
-<p>{{model.text}}</p>
-{{edit-question-tile model=model editQuestion='editQuestion' deleteQuestion='deleteQuestion'}}
+<div class="row">
+  <h2>{{model.title}}</h2>
+  <h4>-{{model.author}}</h4>
+  <p class="question-text">{{model.text}}</p>
+</div>
 
-{{#each model.answers as |answer|}}
+<div class="row">
+  <div class="edit-question">
+    {{edit-question-tile model=model editQuestion='editQuestion' deleteQuestion='deleteQuestion'}}
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  {{#each model.answers as |answer|}}
   {{question-answer-tile answer=answer}}
-{{/each}}
+  {{/each}}
+</div>
 
-{{new-answer-tile saveAnswer='saveAnswer' model=model}}
+<div class="new-answer">
+  {{new-answer-tile saveAnswer='saveAnswer' model=model}}
+</div>

@@ -1,4 +1,5 @@
 <form>
+  <h3>Submit an answer</h3>
   <div class="form-group">
     <label for="author">Author</label><br>
     {{input value=author class="author form-control"}}
@@ -6,7 +7,7 @@
 
   <div class="form-group">
     <label for="answer">Answer</label><br>
-    {{textarea rows="10" cols="100" value=answer id="answer"}}
+    {{textarea class="form-control" rows="4" value=answer id="answer"}}
   </div>
   <button {{action 'saveAnswer'}}>Save</button>
 </form>
